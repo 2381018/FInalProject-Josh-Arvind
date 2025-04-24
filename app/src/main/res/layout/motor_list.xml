@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#FAFAFA">
+    android:background="@color/material_dynamic_neutral80"
+    android:padding="16dp">
 
     <LinearLayout
+        android:id="@+id/PsnBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -16,19 +17,19 @@
             android:id="@+id/motorHeaderText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:text=" Pilih Jenis Motor Yang Anda Inginkan"
-            android:textSize="22sp"
-            android:textStyle="bold"
             android:textColor="#212121"
-            android:layout_marginBottom="8dp" />
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="Kami menyediakan berbagai pilihan motor yang siap menemani perjalananmu!"
-            android:textSize="16sp"
             android:textColor="#616161"
-            android:layout_marginBottom="16dp" />
+            android:textSize="16sp" />
 
         <!-- Card: Mio 2016 -->
         <androidx.cardview.widget.CardView
@@ -41,17 +42,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="12dp"
-                android:gravity="center_vertical">
+                android:padding="12dp">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="60dp"
                     android:layout_marginEnd="12dp"
+                    android:contentDescription="Gambar CBR 2016"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/CBR"
-                    android:contentDescription="Gambar CBR 2016" />
+                    android:src="@drawable/cbr" />
 
 
                 <LinearLayout
@@ -71,8 +72,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Durasi: 1 hari"
-                        android:textSize="14sp"
-                        android:textColor="#757575" />
+                        android:textColor="#757575"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -88,16 +89,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="12dp"
-                android:gravity="center_vertical">
+                android:padding="12dp">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/vario125"
+                    android:layout_marginEnd="12dp"
                     android:contentDescription="Motor Icon"
-                    android:layout_marginEnd="12dp"/>
+                    android:src="@drawable/vario125" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -116,8 +117,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Durasi: 2 hari"
-                        android:textSize="14sp"
-                        android:textColor="#757575" />
+                        android:textColor="#757575"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -133,16 +134,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="12dp"
-                android:gravity="center_vertical">
+                android:padding="12dp">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/Supra"
+                    android:layout_marginEnd="12dp"
                     android:contentDescription="Motor Icon"
-                    android:layout_marginEnd="12dp"/>
+                    android:src="@drawable/supra" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -161,8 +162,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Durasi: 3 hari"
-                        android:textSize="14sp"
-                        android:textColor="#757575" />
+                        android:textColor="#757575"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -171,23 +172,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
             android:text="Dan masih banyak lagi pilihan menarik lainnya!"
-            android:textSize="14sp"
-            android:textStyle="italic"
             android:textColor="#424242"
-            android:layout_marginBottom="30dp" />
+            android:textSize="14sp"
+            android:textStyle="italic" />
 
         <!-- Order Button -->
         <Button
             android:id="@+id/orderButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#4CAF50"
+            android:backgroundTint="@color/black"
+            android:padding="12dp"
             android:text="Pesan Sekarang"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:drawableStart="@drawable/ic_shopping_cart"
-            android:padding="12dp" />
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 </ScrollView>

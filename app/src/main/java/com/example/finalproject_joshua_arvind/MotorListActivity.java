@@ -5,18 +5,18 @@ import android.os.Bundle;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity {
+public class MotorListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login); // Tampilkan layout login.xml
+        setContentView(R.layout.motor_list); // Tampilkan layout motor_list.xml
 
-        // Contoh tombol untuk beralih ke Motor List
-        findViewById(R.id.btnLogin).setOnClickListener(new View.OnClickListener() {
+        // Contoh tombol untuk beralih ke Order
+        findViewById(R.id.orderButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, MotorListActivity.class));
+                startActivity(new Intent(MotorListActivity.this, OrderActivity.class));
             }
         });
     }

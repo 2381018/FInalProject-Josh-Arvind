@@ -3,49 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/material_dynamic_neutral80"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
         <!-- Ilustrasi -->
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:src="@drawable/MWB"
-            android:contentDescription="Thank You Illustration"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Thank You Illustration"/>.
 
         <!-- Header -->
         <TextView
             android:id="@+id/orderHeaderText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
             android:text="Terima Kasih Sudah Memesan!"
-            android:textSize="22sp"
-            android:textStyle="bold"
             android:textColor="#212121"
-            android:layout_marginBottom="4dp" />
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="Silakan isi data berikut:"
-            android:textSize="16sp"
             android:textColor="#757575"
-            android:layout_marginBottom="16dp" />
+            android:textSize="16sp" />
 
         <!-- Form Card -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="6dp"
-            android:layout_marginBottom="24dp">
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -65,8 +64,8 @@
                         android:id="@+id/nameInput"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
-                        android:background="@null" />
+                        android:background="@null"
+                        android:inputType="textPersonName" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- No KTP -->
@@ -81,8 +80,8 @@
                         android:id="@+id/ktpInput"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:background="@null" />
+                        android:background="@null"
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Daerah Tinggal -->
@@ -97,8 +96,8 @@
                         android:id="@+id/regionInput"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text"
-                        android:background="@null" />
+                        android:background="@null"
+                        android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Alamat Lengkap -->
@@ -112,8 +111,8 @@
                         android:id="@+id/addressInput"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:background="@null" />
+                        android:background="@null"
+                        android:inputType="textMultiLine" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -123,12 +122,11 @@
             android:id="@+id/submitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:padding="14dp"
             android:text="Kirim Data"
             android:textAllCaps="false"
-            android:padding="14dp"
-            android:backgroundTint="#4CAF50"
-            android:textColor="@android:color/white"
-            android:drawableStart="@drawable/ic_send" />
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 </ScrollView>
